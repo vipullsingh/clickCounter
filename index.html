@@ -57,6 +57,15 @@ button {
     <h5>Good practice: no JavaScript code in HTML</h5>
 
   </div>
+  <script>
+    var button = document.getElementById("clickme"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = "Click me: " + count;
+};
+
+  </script>
 </body>
 
 </html>
