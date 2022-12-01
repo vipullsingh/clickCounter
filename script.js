@@ -1,9 +1,6 @@
-var box = document.getElementById('box');
-var clickCount = document.getElementById('click-count');
-count = 0;
-
-box.addEventListener('click', function(){
-    count++;
-    console.log(count);
-    clickCount.innerText = count + " ";
-});
+var button = document.getElementById("clickme"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = "Click me: " + count;
+};
